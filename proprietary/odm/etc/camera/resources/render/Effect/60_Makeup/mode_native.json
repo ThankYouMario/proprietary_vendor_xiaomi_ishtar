@@ -1,7 +1,11 @@
 {
 	"##":"质感妆容",
 	"Type":"Effect",
-	"EnvLightType": 0,
+	"ExtraOption":
+	{
+		"EnvLightType": 0,
+		"EnableGenderMakeup":false
+	},
 	"TrueSight":
 	[
 		{

@@ -5,8 +5,8 @@
       "paramS1": 4,
       "paramS2": 4,
       "paramS3": 2,
-	  "paramM-1": 9,
-	  "StructRear": {
+      "paramM-1": 9,
+      "StructRear": {
         "paramC": -10,
         "paramD": 64
       },
@@ -14,32 +14,32 @@
         "paramC": -45,
         "paramD": 64
       },
-	  "StructBM": {
+      "StructBM": {
         "paramA": 31,
-		"paramB": 31,
-		"paramG": 0,
-		"paramT": 500,
-		"paramM-2": 20,
-		"paramSR": 0
+        "paramB": 31,
+        "paramG": 0,
+        "paramT": 500,
+        "paramM-2": 20,
+        "paramSR": 0
       },
-	  "StructSGBM": {
-		"paramSC": 1,
-		"paramCM": 1,
-		"paramH": 200,
-		"paramI": 16,
-		"paramU": 30,
-		"paramJ": 17,
-		"paramP1": 8,
-		"paramP2": 32,
-		"paramSP": 1
+      "StructSGBM": {
+        "paramSC": 1,
+        "paramCM": 1,
+        "paramH": 200,
+        "paramI": 16,
+        "paramU": 30,
+        "paramJ": 17,
+        "paramP1": 8,
+        "paramP2": 32,
+        "paramSP": 1
       }
-	},
+    },
     "Struct_HOT": {
       "paramS1": 4,
       "paramS2": 4,
       "paramS3": 2,
-	  "paramM-1": 9,
-	  "StructRear": {
+      "paramM-1": 9,
+      "StructRear": {
         "paramC": -10,
         "paramD": 64
       },
@@ -47,26 +47,26 @@
         "paramC": -45,
         "paramD": 64
       },
-	  "StructBM": {
+      "StructBM": {
         "paramA": 31,
-		"paramB": 31,
-		"paramG": 0,
-		"paramT": 500,
-		"paramM-2": 20,
-		"paramSR": 0
+        "paramB": 31,
+        "paramG": 0,
+        "paramT": 500,
+        "paramM-2": 20,
+        "paramSR": 0
       },
-	  "StructSGBM": {
-		"paramSC": 1,
-		"paramCM": 1,
-		"paramH": 200,
-		"paramI": 16,
-		"paramU": 30,
-		"paramJ": 17,
-		"paramP1": 8,
-		"paramP2": 32,
-		"paramSP": 0
+      "StructSGBM": {
+        "paramSC": 1,
+        "paramCM": 1,
+        "paramH": 200,
+        "paramI": 16,
+        "paramU": 30,
+        "paramJ": 17,
+        "paramP1": 8,
+        "paramP2": 32,
+        "paramSP": 0
       }
-	  }
+    }
   },
   "StructDS": {
     "paramB1": 0,
@@ -162,7 +162,7 @@
       "paramCCM": 1,
       "paramFRC": 1.0,
       "paramTolerr": 0.001,
-      "paramIterMax": 250,
+      "paramIterMax": 150,
       "paramIterCheck": 10,
       "paramMskErodeNum": 0
     },
@@ -184,19 +184,21 @@
       "paramCCM": 1,
       "paramFRC": 1.0,
       "paramTolerr": 0.001,
-      "paramIterMax": 250,
+      "paramIterMax": 150,
       "paramIterCheck": 10,
       "paramMskErodeNum": 0
     }
   },
   "StructBlurDisp": {
-    "paramSwitch": 1,
+    "paramSwitch": 0,
     "paramThresDensity": 0.5,
     "paramThresVar": 10
   },
   "StructPostProSwitch": {
     "paramNonEdge": 1,
-    "paramDTF": 1
+    "paramDTF": 1,
+    "paramSDR": 1,
+    "paramSDRT": 0.03
   },
   "StructTimeControl": {
     "paramOvertimeThres": 4000
@@ -209,6 +211,7 @@
     "param_Tx": 0,
     "param_Ty": -23,
     "param_BSwap": 1,
+    "param_algType3_RKr": 1,
     "param_UndisSelect": 2,
     "param_BinHasDistable": 0,
     "param_MAINDIS0": 0,
@@ -241,6 +244,7 @@
     "param_Tx": 19.61,
     "param_Ty": -4.06,
     "param_BSwap": 1,
+    "param_algType3_RKr": 1,
     "param_UndisSelect": 2,
     "param_BinHasDistable": 1,
     "param_MAINDIS0": 0,
@@ -320,6 +324,7 @@
   },
   "StructIMG_1_4x_WU_Bin_Bin": {
     "param_F_proc": 1.7,
+    "param_Z_fix": 1000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 2020,
@@ -329,6 +334,7 @@
   },
   "StructIMG_2x_WU_Re_Re": {
     "param_F_proc": 1.6,
+    "param_Z_fix": 2000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 2826,
@@ -338,6 +344,7 @@
   },
   "StructIMG_2x_WU_Bin_Bin": {
     "param_F_proc": 1.8,
+    "param_Z_fix": 2000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 1413,
@@ -346,7 +353,8 @@
     "param_s_4_3h": 1800
   },
   "StructIMG_3_26x_WT_Bin_Re": {
-    "param_F_proc": 1.2,	
+    "param_F_proc": 1.2,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 3344,
@@ -355,7 +363,8 @@
     "param_s_4_3h": 2520
   },
   "StructIMG_3_26x_WT_Bin_Bin": {
-    "param_F_proc": 1.8,	
+    "param_F_proc": 1.8,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 3344,
@@ -364,7 +373,8 @@
     "param_s_4_3h": 1800
   },
   "StructIMG_3_26x_WU_Bin_Bin": {
-    "param_F_proc": 1.8,	
+    "param_F_proc": 1.8,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 969,
@@ -374,6 +384,7 @@
   },
   "StructIMG_3_75x_WT_Bin_Re": {
     "param_F_proc": 1.6,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 2712,
@@ -383,6 +394,7 @@
   },
   "StructIMG_3_75x_WT_Bin_Bin": {
     "param_F_proc": 1.9,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 2712,
@@ -392,6 +404,7 @@
   },
   "StructIMG_3_75x_WU_Bin_Bin": {
     "param_F_proc": 2.2,
+    "param_Z_fix": 3000,
     "param_M_Nc": 1,
     "param_S_Nc": 1,
     "param_m_4_3w": 783,

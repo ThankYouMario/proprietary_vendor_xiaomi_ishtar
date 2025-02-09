@@ -1,6 +1,9 @@
 {
 	"Type":"Effect",
-	"RetouchFactorType": 0,
+	"ExtraOption":
+	{
+		"RetouchFactorType": 0
+	},
 	"TrueSight":
 	[
 		{
@@ -19,7 +22,8 @@
 			"FaceRetouchEngine":
 			{
 				"Enable":true,
-				"DegreeFactor":0.6,
+				"ParamFlag":1,
+				"DegreeFactor":0.8,
 				"SkinMatchSwitch": false,
 				"Portraiture_Fine": 0,
 				"Portraiture_Medium": 0,

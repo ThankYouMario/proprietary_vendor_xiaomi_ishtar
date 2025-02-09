@@ -23,16 +23,6 @@
             "NodeInstance": "BayerRaw2YuvInstance0"
       },
       {
-            "NodeName": "com.xiaomi.plugin.offlinepostproc",
-            "NodeInstance": "BayerRaw2YuvInstance1",
-            "NodeProperty":[
-              {
-                  "NodePropertyName":"NodeMask",
-                  "NodePropertyValue":12
-              }
-              ]
-      },
-      {
           "NodeName": "com.xiaomi.plugin.capdepth",
           "NodeInstance": "CapdepthInstance0",
           "OutputBufferNeedCheck" : false,
@@ -294,7 +284,7 @@
               "SrcPort": {
               "PortId": 0,
                   "NodeInstance": "CapdepthInstance0",
-                  "PortFormat": "YUV420_NV12"
+                  "PortFormat": "Y16"
               },
 	          "DstPort": {
 	              "PortId": 2,
@@ -309,31 +299,8 @@
 	          "DstPort": {
 	              "PortId": 1,
 	              "NodeInstance": "CapbokehInstance0",
-                  "PortFormat": "YUV420_NV12"
+                  "PortFormat": "Y16"
 	          }
-	      },
-	      {
-	          "SrcPort": {
-	              "PortId": 2,
-	              "NodeInstance": "SourceBuffer2"
-	          },
-	          "DstPort": {
-	              "PortId": 0,
-	              "NodeInstance": "BayerRaw2YuvInstance1",
-                  "PortFormat": "RAW16"
-	          }
-	      },
-	      {
-		        "SrcPort": {
-		            "PortId": 0,
-		            "NodeInstance": "BayerRaw2YuvInstance1",
-                    "PortFormat": "YUV420_NV12"
-		        },
-		        "DstPort": {
-		            "PortId": 2,
-                    "NodeInstance": "CapbokehInstance0",
-                    "PortFormat": "YUV420_NV12"
-		        }
 	      },
 	      {
 	          "SrcPort": {

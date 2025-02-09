@@ -1,6 +1,9 @@
 # M1 setting file
 multiCameraLogicalXMLFile=ishtar.xml
 
+#Resort the sensor data
+enableResortSensorData=TRUE
+
 #SAT
 enablePostZoomFOV=1
 isPhyicalMultiCameraSupported=TRUE
@@ -30,6 +33,9 @@ isSwitchAnimationSupported=TRUE
 maxDigitalZoomVideo=15.0
 satZoomButton=0.5:1:2:3.2:5:10:120|0.5:1:2:3.2:5:10:15
 satZoomTime=800|600
+
+#SDSR enable
+isstableDiffusionSRSupported=1
 
 #HalBufferManager
 halBufferCacheMax=8
@@ -166,7 +172,7 @@ isZoomEISPipSupported=1
 # dynamic Fps Support
 is30fpsDynamicSupported=TRUE
 is60fpsDynamicSupported=TRUE
-dynamicFpsSupported=0@30|1@30|5@30|5@60|8@60
+dynamicFpsSupported=0@30|1@30|6@30|6@60|2@60
 #isVideoHDRSupportSetFreq
 isVideoHDRSupportSetFreq=0x3
 
@@ -510,7 +516,7 @@ ReleasePerfFrameNum=60
 
 #EEPROM
 enableEEPROMBackup=TRUE
-ignoreEEPROMbackupFail=FALSE
+ignoreEEPROMbackupFail=TRUE
 strictEEPROMbackuphwlevel=P2|MP
 
 #M1 delayed video af control
@@ -523,3 +529,9 @@ enableMfhdrFlickerDetection=TRUE
 overwriteAFCalibrationData=TRUE
 
 EnableRemapISO=TRUE
+
+#for camera mipi crc error
+enableInternalKMDRecovery=TRUE
+crcErrorDivisor=100
+
+stylizationType=0x6

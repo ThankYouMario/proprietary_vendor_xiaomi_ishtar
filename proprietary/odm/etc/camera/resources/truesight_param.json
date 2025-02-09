@@ -5,29 +5,61 @@
 	"##note3": "3.某一配置项如果不存在, 但存在default项目项, 则使用default配置项. 如: EffectParams::capture下未配置OtherFront, 则使用default配置项",
 
 	"TrueSight": "",
-	"BrandModel": "xiaomi_m1",
+	"BrandModel": "xiaomi_N2",
 	"CaptureDefaultEffectPath": "render/Effect/effect_mode_clear.json",
 	"PreviewDefaultEffectPath": "render/Effect/effect_mode_clear.json",
-	"EffectGLSLPath": "render/glsl/",
+	"EffectGLSLPath": "render/BuildIn/",
+
+	"XRealityImageInit": {
+		"EnableE2Eacne": false,
+		"EnableE2EskinUnify": false,
+		"EnableE2Ewrinkle": false,
+		"EnableE2Eeyebrow": false,
+		"EnableE2E2EacneTiny": false,
+		"EnableE2Edimple": false,
+		"EnableFaceRetouch": true,
+		"E2EacneHardwareAccelerationType": 1,
+		"E2EskinUnifyHardwareAccelerationType": 1,
+		"E2EwrinkleHardwareAccelerationType": 1,
+		"E2EeyebrowHardwareAccelerationType": 1,
+		"E2EacneTinyHardwareAccelerationType": 1
+	},
+	"XRealityPreviewInit": {
+		"EnableE2E2EacneLight": false,
+		"E2EacneLightHardwareAccelerationType": 1
+	},
+
 	"FactorConfig":
 	{
-		"##": "磨皮程度系数",
+		"##Retouch": "磨皮程度系数",
 		"Retouch":
 		[
 			{
 				"##": "普通(拍照)模式",
 				"Type": 0,
-				"Iso": [   99, 100, 399, 400, 1199, 1200, 3199, 3200],
-				"Factor":[1.0, 0.8, 0.8, 0.6,  0.6,  0.4,  0.4,  0.2]
+				"PreviewIso": [   99, 100, 399, 400, 1199, 1200, 3199, 3200],
+				"PreviewFactor":[1.0, 0.8, 0.8, 0.6,  0.6,  0.4,  0.4,  0.2],
+				"CaptureIso": [   99, 100, 399, 400, 1199, 1200, 3199, 3200],
+				"CaptureFactor":[1.0, 0.8, 0.8, 0.6,  0.6,  0.4,  0.4,  0.2]
 			},
 			{
 				"##": "视频模式",
 				"Type": 1,
-				"Iso": [  1199, 1200, 2399, 2400, 3999, 4000],
-				"Factor":[1.0, 0.8, 0.8, 0.6,  0.6, 0.4]
+				"PreviewIso": [  1199, 1200, 2399, 2400, 3999, 4000],
+				"PreviewFactor":[1.0, 0.8, 0.8, 0.6,  0.6, 0.4],
+				"CaptureIso": [  299, 300, 799, 800, 1199, 1200],
+				"CaptureFactor":[1.0, 0.8, 0.8, 0.5,  0.5, 0.2]
+			},
+			{
+				"##": "后置模式",
+				"Type": 2,
+				"PreviewIso": [   99, 100, 399, 400, 599, 600, 1199, 1200, 3199, 3200, 9999],
+				"PreviewFactor":[1.0, 0.8, 0.8, 0.5, 0.5, 0.3,  0.3,  0.2,  0.2,  0.0,  0.0],
+				"CaptureIso": [   99, 100, 399, 400, 599, 600, 1199, 1200, 3199, 3200, 9999],
+				"CaptureFactor":[1.0, 0.8, 0.8, 0.5, 0.5, 0.3,  0.3,  0.2,  0.2,  0.0,  0.0]
 			}
 		],
-		"##": "环境光系数",
+		"##EnvLight": "环境光系数",
 		"EnvLight":
 		[
 			{
@@ -55,6 +87,26 @@
 				"FaceShadowThreshold":140,
 				"MinFactor":0.3,
 				"MaxFactor":[1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.5, 0.5]
+			},
+			{
+				"##": "后置模式",
+				"Type": 2,
+				"LuxArray": [0, 110, 170, 200, 300, 360, 400, 999],
+				"FaceShadowPerc":0.1,
+				"K":0.3,
+				"HighThreshold":[90, 90, 90, 90, 90, 90, 90, 90],
+				"LowThreshold":[40, 40, 40, 40, 40, 40, 40, 40],
+				"Step":[0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02],
+				"FaceShadowThreshold":140,
+				"MinFactor":0.2,
+				"MaxFactor":[1.0, 1.0, 1.0, 0.7, 0.6, 0.5, 0.3, 0.2]
+			}
+		],
+		"##FillLight": "补光灯系数",
+		"FillLight":
+		[
+			{
+				"Factor": 1.25
 			}
 		]
 	}

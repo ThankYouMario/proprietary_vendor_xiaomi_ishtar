@@ -13,7 +13,7 @@
 			"Mode":"Capture"
 		},
 		{
-			"ConfigurePath":"Effects/1_FacialSmooth/effectV2.json",
+			"ConfigurePath":"Effects/1_FacialSmooth/effect.json",
 			"Index":2,
 			"Mode":"Capture"
 		}

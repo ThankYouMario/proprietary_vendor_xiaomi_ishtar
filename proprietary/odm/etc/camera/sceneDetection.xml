@@ -790,4 +790,34 @@
         <snow_idx>16</snow_idx>
   </aiscene_list>
 
+  <sdsr_param>
+        <sdsr_sobel_freq>6</sdsr_sobel_freq>
+        <sdsr_range_0>
+            <sdsr_lux_idx>260</sdsr_lux_idx>
+            <sdsr_zoom_ratio>30</sdsr_zoom_ratio>
+            <sdsr_stable_in_frames>30</sdsr_stable_in_frames>
+            <sdsr_stable_out_frames>4</sdsr_stable_out_frames>
+            <sdsr_sobel_mean_thres_high>100</sdsr_sobel_mean_thres_high>
+            <sdsr_sobel_mean_thres_low>10</sdsr_sobel_mean_thres_low>
+            <sdsr_sobel_max_thres>300</sdsr_sobel_max_thres>
+        </sdsr_range_0>
+        <sdsr_range_1>
+            <sdsr_lux_idx>260</sdsr_lux_idx>
+            <sdsr_zoom_ratio>60</sdsr_zoom_ratio>
+            <sdsr_stable_in_frames>30</sdsr_stable_in_frames>
+            <sdsr_stable_out_frames>4</sdsr_stable_out_frames>
+            <sdsr_sobel_mean_thres_high>100</sdsr_sobel_mean_thres_high>
+            <sdsr_sobel_mean_thres_low>10</sdsr_sobel_mean_thres_low>
+            <sdsr_sobel_max_thres>300</sdsr_sobel_max_thres>
+        </sdsr_range_1>
+        <sdsr_range_2>
+            <sdsr_lux_idx>260</sdsr_lux_idx>
+            <sdsr_zoom_ratio>80</sdsr_zoom_ratio>
+            <sdsr_stable_in_frames>30</sdsr_stable_in_frames>
+            <sdsr_stable_out_frames>4</sdsr_stable_out_frames>
+            <sdsr_sobel_mean_thres_high>100</sdsr_sobel_mean_thres_high>
+            <sdsr_sobel_mean_thres_low>10</sdsr_sobel_mean_thres_low>
+            <sdsr_sobel_max_thres>300</sdsr_sobel_max_thres>
+        </sdsr_range_2>
+  </sdsr_param>
 </sceneDetection>

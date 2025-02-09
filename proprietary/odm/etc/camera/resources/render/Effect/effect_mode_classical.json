@@ -1,14 +1,14 @@
 {
-	"Type":"Category",
+	"Type":"EffectCategory",
 	"TrueSight":
 	[
+        {
+            "ConfigurePath":"5_DLRetouch/mode_classical.json",
+            "Index":5
+        },
 		{
 			"ConfigurePath":"10_ColorTone/mode_classical.json",
 			"Index":10
-		},
-		{
-			"ConfigurePath":"15_DLRetouch/mode_classical.json",
-			"Index":15
 		},
 		{
 			"ConfigurePath":"20_FaceRetouch/mode_classical.json",

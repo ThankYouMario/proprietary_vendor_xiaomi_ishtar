@@ -69,6 +69,10 @@
                 ]
             },
             {
+                "NodeName": "com.xiaomi.plugin.sdsr",
+                "NodeInstance": "SdSrInstance0"
+            },
+            {
                 "NodeName": "com.xiaomi.plugin.offlinepostproc",
                 "NodeInstance": "YuvReprocessInstance0",
                 "NodeProperty":[
@@ -658,6 +662,22 @@
                 "SrcPort": {
                       "PortId": 0,
                       "NodeInstance": "SkinBeautifierInstance0",
+                      "PortFormat": "YUV420_NV12",
+                      "PortFollowType":2,
+                      "FollowPortId":0
+                  },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SdSrInstance0",
+                    "PortFormat": "YUV420_NV12",
+                    "PortFollowType":2,
+                    "FollowPortId":0
+                }
+            },
+            {
+                "SrcPort": {
+                      "PortId": 0,
+                      "NodeInstance": "SdSrInstance0",
                       "PortFormat": "YUV420_NV12",
                       "PortFollowType":2,
                       "FollowPortId":0
