@@ -819,6 +819,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ishtar/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/xiaomi/ishtar/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/ishtar/proprietary/odm/etc/mdss_dsi_m1_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_m1_42_02_0a_dsc_cmd_mi.xml \
+    vendor/xiaomi/ishtar/proprietary/odm/etc/media_profiles_kalama.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_kalama.xml \
+    vendor/xiaomi/ishtar/proprietary/vendor/etc/media_profiles_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama.xml \
     vendor/xiaomi/ishtar/proprietary/odm/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/ishtar/proprietary/odm/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/chre_dynamic_sensors.json \
     vendor/xiaomi/ishtar/proprietary/odm/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/kailua_qsh_ble_0.json \
